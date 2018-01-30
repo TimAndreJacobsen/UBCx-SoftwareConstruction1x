@@ -1,6 +1,5 @@
 package model;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Transcript {
@@ -11,9 +10,9 @@ public class Transcript {
 
 
     public Transcript(String name, int id) {
-        this.name = name;
-        this.id = id;
-        this.courses = new ArrayList<Course>();
+        //this.name = name;
+        //this.id = id;
+        //this.courses = new ArrayList<Course>();
     }
 
     // getters
@@ -44,21 +43,29 @@ public class Transcript {
     // REQUIRES: Grade is valid(0.0 <-> 4.0), course != null
     // MODIFIES: this
     // EFFECTS:  adds grade to course
-    public void addGrade(String course, double grade){
-        assert (grade > 0.0 && grade <= 4.0);
+    public boolean addGrade(String course, double grade){
+        //if (grade > 0.0 && grade <= 4.0);
+        // add and return true
+        // else return false
+        return false;
     }
 
     // This method should return course name and grade in some consistent String format
     // REQUIRES: course exists
-    // EFFECTS:  returns String format "CourseName: Grade"
-    public String getCourseAndGrade(String course){ return null; }
+    // EFFECTS:  returns String format "CourseName: Grade" OR null if no grade
+    public String getCourseAndGrade(String course){
+        // return grade for this student in course given as param
+        //
+        return null;
+    }
+
 
     // REQUIRES: grades != null
     // EFFECTS:  prints out grades in course
     //           display student academic record
     public void printTranscript(){ }
 
-    // EFFECTS: calculates GPA from Grade
+    // EFFECTS: returns GPA of this
     public double getGPA(){ return 0.0; }
 
 
