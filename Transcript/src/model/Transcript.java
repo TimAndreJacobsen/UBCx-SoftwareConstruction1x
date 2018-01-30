@@ -65,7 +65,7 @@ public class Transcript {
     //           display student academic record
     public void printTranscript(){ }
 
-    // EFFECTS: returns GPA of this
+    // EFFECTS: returns GPA of this student
     public double getGPA(){ return 0.0; }
 
 
