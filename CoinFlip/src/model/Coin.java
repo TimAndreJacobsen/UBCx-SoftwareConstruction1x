@@ -30,13 +30,14 @@ public class Coin {
 
     // EFFECTS:  returns true if coin is heads
     //           returns false is coin is tails
-    public boolean checkStatus() {
+    public boolean isHeads() {
         return this.isHeads;
     }
 
+    @Override
     // EFFECTS:  returns state of coin in String format: "heads" OR "tails"
     public String toString() {
-        if (checkStatus()) { // could  just passed isheads straight into it, but checkstatus would be grey, unused and sad.
+        if (isHeads()) { // could  just passed isheads straight into it, but checkstatus would be grey, unused and sad.
             return "heads";
         }
         return "tails";

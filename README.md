@@ -7,6 +7,8 @@ Part 3/7 in University of British Columbia's Software Development course.
 	Learning to work with:
 	* AGILE
 	* Test Driven Design
+	* Flow charts
+	* Call graphs
 	
 ## Methodology
 
@@ -22,6 +24,10 @@ Part 3/7 in University of British Columbia's Software Development course.
 		
 ### Testing
 
-		* Identify key testing parameters
-		* Write tests
-		* JUnit - Framework
+	* Identify key testing parameters
+	* Write tests
+	* JUnit - Framework
+		
+### Debugging
+
+	* Hypothesis driven debugging
