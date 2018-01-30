@@ -1,10 +1,13 @@
-# UBCx SoftWare Construction: Data Abstraction
+## UBCx SoftWare Construction: Data Abstraction
 
-Code Design
-	-AGILE
-	-Test Driven Design
+Part 3/7 in University of British Columbia's Software Development course.
+
+## Work flow
+
+	Learning to work with AGILE and Test driven design
 	
-Methodology
+## Methodology
+
 	-Specify
 		// REQUIRES
 		// MODIFIES
