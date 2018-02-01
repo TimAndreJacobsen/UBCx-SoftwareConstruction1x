@@ -8,4 +8,10 @@ public class Course {
         this.name = name;
     }
 
+    // getters
+    public String getName() {
+        return name;
+    }
+
+
 }

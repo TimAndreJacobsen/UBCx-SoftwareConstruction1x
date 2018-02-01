@@ -21,7 +21,12 @@ public class FerryCard {
     // MODIFIES: this
     // EFFECTS: adds balanceAdded to balance available on this card
     public void topUp(int balanceAdded) {
-        balance = balanceAdded;
+        balance += balanceAdded;
+
+    }
+
+    private void topUpFerryOwner() {
+
     }
 
     // MODIFIES: this
@@ -38,6 +43,7 @@ public class FerryCard {
 
         Ticket ticket = new Ticket(ferry, owner);
         ferry.addTicket(ticket);
+        this.setBalance(this.balance -= ticketPrice);
         return true;
     }
 

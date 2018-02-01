@@ -10,11 +10,13 @@ public class Ferry {
     private String destination;
     private Date sailingDate;
     private int ticketPrice;
+    private FerryOwner ferryOwner;
 
     public Ferry(String destination, Date sailingDate, int ticketPrice) {
+
         this.destination = destination;
         this.sailingDate = sailingDate;
-        this.ticketPrice = 0;
+        this.ticketPrice = ticketPrice;
         ticketSet = new HashSet<>();
     }
 

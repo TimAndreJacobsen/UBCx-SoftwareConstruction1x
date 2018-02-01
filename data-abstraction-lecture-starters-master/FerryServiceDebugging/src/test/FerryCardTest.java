@@ -52,11 +52,16 @@ public class FerryCardTest {
 
     @Test
     public void testBuyTicket() {
+        // SETUP:
         int testPrice = 15;
         Date testDate = new Date();
         Ferry testFerry = new Ferry("Nanaimo", testDate, testPrice);
         testFerryCard.topUp(20);
+
+        // TEST:
         assertTrue(testFerryCard.buyTicket(testFerry));
+
+        // VERIFY:
         assertEquals(testFerryCard.getBalance(), 5);
         assertFalse(testFerry.getTicketSet().isEmpty());
     }
