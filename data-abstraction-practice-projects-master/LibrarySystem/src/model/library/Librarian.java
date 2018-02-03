@@ -9,26 +9,25 @@ public class Librarian {
     private Library managingLibrary;
     private Book favBook;
 
-    public Librarian(String name, int age, Library lib, Book bk) {
-        //TODO: complete the specifications and implementation of this method
+    public Librarian(String name, int age, Library lib, Book favBook) {
+        this.name = name;
+        this.age = age;
+        this.managingLibrary = lib;
+        this.favBook = favBook;
     }
 
     // getters
     public String getName() {
-        //TODO: complete the specifications and implementation of this method
-        return null;
+        return this.name;
     }
     public int getAge() {
-        //TODO: complete the specifications and implementation of this method
-        return 0;
+        return this.age;
     }
     public Library getManagingLibrary() {
-        //TODO: complete the specifications and implementation of this method
-        return null;
+        return this.managingLibrary;
     }
     public Book getFavBook() {
-        //TODO: complete the specifications and implementation of this method
-        return null;
+        return this.favBook;
     }
 
     // REQUIRES: lib != null
@@ -37,9 +36,10 @@ public class Librarian {
     //          Look carefully at the implementation of library - does it
     //          also have an associated librarian field? Does it make a
     //          difference in the implementation of this method?
-    public boolean changeLibrary(Library lib) {
-        //TODO: complete the specifications and implementation of this method
-        return false;
+    public void changeLibrary(Library lib) {
+        // changed method return from bool to void
+        this.managingLibrary = lib;
+        lib.hireLibrarian(this);
     }
 
 
